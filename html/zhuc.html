@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>注册</title>
+		<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<style>
+			form{
+				margin: 100px auto;
+				width: 500px;
+			}
+			.btn-success{
+				width: 200px;
+			}
+		</style>
+	</head>
+	<body>
+		<!--<h1>账号请注册一个账户</h1>-->
+		<!--<form action="../php/zhuche.php" method="post">-->
+			<!--用户名<input type="text"  placeholder="请输入账号" name="userName"/><br/>-->
+			<!--密码<input type="password"  placeholder="请输入密码" name="userPaw"/><br/>-->
+				<!--<input type="submit" placeholder="注册"/>-->
+		<!--</form>-->
+		<p class="text-center h1">注册界面</p>
+		<form action="../php/zhuche.php" method="post">
+			<div class="form-group">
+				<label for="exampleInputEmail1">用户名</label>
+				<input type="text" class="form-control" id="exampleInputEmail1" placeholder="请输入用户名" name="userName">
+			</div>
+			<div class="form-group">
+				<label for="exampleInputPassword1">密码</label>
+				<input type="password" class="form-control" id="exampleInputPassword1" placeholder="请输入密码" name="userPaw">
+			</div>
+			<div class="checkbox">
+				<label>
+					<input type="checkbox"> 我已经阅读，并且同意协议
+				</label>
+			</div>
+			<button type="submit" class="btn btn-default btn btn-success btn-lg">点击注册</button>
+		</form>
+	</body>
+</html>
